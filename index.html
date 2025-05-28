@@ -8,14 +8,21 @@
 <body>
     <div id ="info">
         <h1>Lucia Abenante</h1>
-        <div id ="personal Info">
-            <h2>Personal Information</h2>
-            <p><strong>ID:</strong> CA54942PT</p>
-            <p><strong>Date of Birth:</strong> 28/04/2008</p>
-            <p><strong>Place of Birth:</strong> Città di Castello, Italy</p>
-            <p><strong>Nationality:</strong> Italian</p>
-            <p><strong>Gender:</strong> Female</p>
-        </div>
+       <div id="personal-container" class="centered">
+    <div id="personal Info">
+        <h2>Personal Information</h2>
+        <p><strong>ID:</strong> CA54942PT</p>
+        <p><strong>Date of Birth:</strong> 28/04/2008</p>
+        <p><strong>Place of Birth:</strong> Città di Castello, Italy</p>
+        <p><strong>Nationality:</strong> Italian</p>
+        <p><strong>Gender:</strong> Female</p>
+    </div>
+
+    <div id="photo">
+        <img src="Foto_carta.jpg" alt="Lucia Abenante" width="200">
+    </div>
+</div>
+
 
         <div id ="contact">
             <h2>Contact</h2>
@@ -65,9 +72,20 @@
 </body>
     <style>
 body {
-   background-color: #64DF64
+   background-color: #54FF54;
     }
+#personal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+    flex-wrap: wrap; 
 
+#photo img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
     </style>
 </html>
