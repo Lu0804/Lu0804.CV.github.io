@@ -50,6 +50,7 @@
             <h5> Level in EQF : EQF level 4 </h5>
         </div>
 </div>
+<div id = "section-below"> 
         <div id="Language">
             <h2>Language Skills</h2>
             <p><strong>Mother Tongue:</strong> Italian</p>
@@ -67,13 +68,14 @@
                 <li>Use of Gmail and other email clients</li>
             </ul>
         </div>
+</div>
     </div>
 </body>
     <style>
 body {
    background-color: #99CCFF;
     }
-        #section-row {
+#section-row {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -88,7 +90,6 @@ body {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #personal-container {
@@ -107,6 +108,23 @@ body {
      display: flex;
     justify-content: center;
     align-items: center;
+#section-below {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* per dispositivi piccoli */
+    margin-top: 30px;
+}
+
+#Language, #skills {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+    
 }
     </style>
 </html>
