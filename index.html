@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id ="info">
-        <h1>Lucia Abenante</h1>
+        <h1 class = "name">Lucia Abenante</h1>
        <div id="personal-container" class="centered">
     <div id="personal Info">
         <h2>Personal Information</h2>
@@ -22,7 +22,7 @@
         <img src="Foto_carta.jpg" alt="Lucia Abenante" width="200">
     </div>
 </div>
-
+<div id="section-row">
         <div id ="contact">
             <h2>Contact</h2>
             <p><strong>Address:</strong> Via dei Lecci no.7, third floor, 06012 Città di Castello (PG), Italy</p>
@@ -49,7 +49,7 @@
             <h5> <strong> Website </strong> </h5> <a href="https://www.franchettisalviani.it"> https://www.franchettisalviani.it </a> 
             <h5> Level in EQF : EQF level 4 </h5>
         </div>
-
+</div>
         <div id="Language">
             <h2>Language Skills</h2>
             <p><strong>Mother Tongue:</strong> Italian</p>
@@ -73,6 +73,24 @@
 body {
    background-color: #99CCFF;
     }
+        #section-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* per dispositivi piccoli */
+    margin-top: 30px;
+}
+
+#contact, #work\ experience, #education {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 #personal-container {
     display: flex;
     justify-content: center;
@@ -85,7 +103,11 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-
+.name {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
     </style>
 </html>
 
