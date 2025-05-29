@@ -21,7 +21,7 @@
     <div id="photo">
         <img src="Foto_carta.jpg" alt="Lucia Abenante" width="200">
     </div>
-     <div id="photo">
+     <div id="photo-europass">
         <img src="Europass-Colour-Purple-Brand-Mark.png" alt="Lucia Abenante" width="200">
     </div>
 </div>
@@ -110,6 +110,13 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+#photo-europass {
+    position: absolute;
+    top: 20px;  /* Distanza dal bordo superiore */
+    right: 20px;  /* Distanza dal bordo destro */
+    z-index: 10;  /* Assicura che la foto sia visibile sopra gli altri contenuti */
+}
+
 .name {
      display: flex;
     justify-content: center;
